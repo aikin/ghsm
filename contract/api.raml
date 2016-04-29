@@ -4,8 +4,8 @@ version: v1
 baseUri: http://api.ghsm.com
 
 types:
-  User: !include schemas/users.json
-
+  User: !include schemas/user.json
+  Users: !include schemas/users.json
 
 /users:
   description: Get all users
@@ -15,7 +15,18 @@ types:
       200:
         body:
           application/json:
-            schema: User
+            schema: Users
             example: !include examples/users.json
             description: under example
             displayName: example
+  post:
+    body:
+      application/json:
+        schema: User
+        example: !include examples/user.json
+    responses:
+      201:
+        body:
+          application/json:
+            schema: string
+            example: "/users/12ad"
