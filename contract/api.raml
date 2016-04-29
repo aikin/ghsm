@@ -2,23 +2,20 @@
 title: ghsm
 version: v1
 baseUri: http://api.ghsm.com
+
 types:
-  TestType:
-    type: object
-    properties:
-      id: number
-      optional?: string
-      expanded:
-        type: object
-        properties:
-          count: number
-/helloWorld:
+  User: !include schemas/users.json
+
+
+/users:
+  description: Get all users
+  displayName: get users api
   get:
     responses:
       200:
         body:
           application/json:
-            example: |
-              {
-                "message" : "Hello World"
-              }
+            schema: User
+            example: !include examples/users.json
+            description: under example
+            displayName: example
