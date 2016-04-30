@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "client for github stars manage",
+  "main": "index.js",
+  "keywords": [
+    "star"
+  ],
+  "author": {
+    "name": "aikin",
+    "email": "me@ulaijn.com",
+    "url": "http://aikin.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aikin/ghsm.git"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/aikin/ghsm/issues"
+  }
+}
