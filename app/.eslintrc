@@ -12,7 +12,6 @@
     "import/namespace": 0,
     "import/no-unresolved": 0,
     "import/no-named-as-default": 2,
-	"jsx-a11y/rule-name": 2,
     "comma-dangle": 0,
     "indent": [2, 2, {"SwitchCase": 1}],
     "no-console": 0,
