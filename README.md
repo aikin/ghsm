@@ -1,2 +1,2 @@
-# gitHub stars manager
+# github stars manager
 
