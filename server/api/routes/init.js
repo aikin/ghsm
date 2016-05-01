@@ -1,5 +1,3 @@
-'use strict';
-
 export default (router) => {
   router
     .get('/init', (ctx, next) => {
