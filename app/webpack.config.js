@@ -2,11 +2,11 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   context: path.resolve(__dirname, '.'),
   devServer: {
     contentBase: './src',
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
     hot: true,
     inline: true,
     port: 3005
