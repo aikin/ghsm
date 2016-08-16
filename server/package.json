@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "start": "babel-node ./bin/run"
+    "start": "babel-node ./bin/run",
+    "test": "mocha test"
   },
   "keywords": [
     "star"
@@ -54,6 +55,8 @@
     "chai": "^3.5.0",
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^7.0.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "supertest": "^2.0.0",
+    "supertest-as-promised": "^4.0.0"
   }
 }
