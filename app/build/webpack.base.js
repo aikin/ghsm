@@ -54,8 +54,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'app',
-      template: __dirname + '/index.html',
-      filename: '../index.html'
+      template: 'index.html',
+      filename: 'index.html',
+      inject: true
     })
   ]
-}
+};
