@@ -24,10 +24,10 @@ app.use(require('webpack-hot-middleware')(compiler))
 app.get('*', (req, res) => {
   const fs = devMiddleWare.fileSystem
   devMiddleWare.waitUntilValid(() => {
-    res.end(fs.readFileSync(path.join(config.output.path, 'index.html')))
+    res.end(fs.readFileSync(path.join(config.output.path, 'src/index.html')))
   })
 })
 
 app.listen(4000, () => {
   console.log(`Listening at http://localhost:4000`)
-})
+});

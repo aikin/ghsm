@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo lol",
     "build": "rm -rf dist && webpack --config build/webpack.prod.js",
+    "build-dev": "rm -rf dist && webpack --config build/webpack.dev.js",
     "dev": "node build/server.js",
     "gh": "npm run build && gh-pages -d dist"
   },

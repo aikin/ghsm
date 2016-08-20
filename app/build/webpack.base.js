@@ -12,7 +12,7 @@ const postcss = [
 
 module.exports = {
   entry: {
-    client: './client/index.js'
+    client: './src/index.js'
   },
   output: {
     path: path.join(__dirname, '../dist/assets'),
@@ -22,8 +22,8 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.vue', '.css', '.json'],
     alias: {
-      root: path.join(__dirname, '../client'),
-      components: path.join(__dirname, '../client/components')
+      root: path.join(__dirname, '../src'),
+      components: path.join(__dirname, '../src/components')
     }
   },
   module: {
@@ -54,8 +54,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'app',
-      template: 'index.html',
-      filename: 'index.html',
+      template: 'src/index.html',
+      filename: 'src/index.html',
       inject: true
     })
   ]
