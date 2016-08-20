@@ -39,13 +39,6 @@ module.exports = {
       }
     ]
   },
-  babel: {
-    babelrc: false,
-    presets: [
-      ['es2015', {modules: false}],
-      'stage-1'
-    ]
-  },
   postcss,
   vue: {
     loaders: {},
