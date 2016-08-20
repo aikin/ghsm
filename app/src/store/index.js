@@ -14,7 +14,7 @@ const mutations = {
 }
 
 const actions = {
-  incrementAsync({commit}) {
+  incrementAsync({ commit }) {
     setTimeout(() => {
       commit('INCREMENT')
     }, 200)

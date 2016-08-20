@@ -1,6 +1,5 @@
 'use strict'
 const path = require('path')
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const postcss = [
@@ -27,6 +26,13 @@ module.exports = {
     }
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.(vue|js)$/,
+        loader: 'eslint',
+        exclude: /node_modules/
+      }
+    ],
     loaders: [
       {
         test: /\.vue$/,
@@ -51,4 +57,4 @@ module.exports = {
       inject: true
     })
   ]
-};
+}
