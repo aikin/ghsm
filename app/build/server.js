@@ -24,7 +24,7 @@ app.use(require('webpack-hot-middleware')(compiler))
 app.get('*', (req, res) => {
   const fs = devMiddleWare.fileSystem
   devMiddleWare.waitUntilValid(() => {
-    res.end(fs.readFileSync(path.join(config.output.path, 'src/index.html')))
+    res.end(fs.readFileSync(path.join(config.output.path, '../index.html')))
   })
 })
 
