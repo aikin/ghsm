@@ -1,9 +1,0 @@
-{
-  "extends": "vue",
-  "plugins": [
-    "html"
-  ],
-  "rules": {
-    "space-before-function-paren": 0
-  }
-}
